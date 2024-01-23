@@ -14,4 +14,8 @@ export class SidebarComponent {
     return this.servicio.tagHistory;
   }
 
+  history(tag : string){
+    this.servicio.searchTag(tag);
+  }
+
 }
