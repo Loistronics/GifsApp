@@ -1,5 +1,5 @@
 import { Gif } from './../../interfaces/gif.interface';
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { GifListComponent } from '../../components/gif-list/gif-list.component';
 import { GifsService } from '../../services/gifs.service';
 
@@ -7,7 +7,6 @@ import { GifsService } from '../../services/gifs.service';
   selector: 'app-search-page',
   imports: [GifListComponent],
   templateUrl: './search-page.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class SearchPageComponent { 
 
